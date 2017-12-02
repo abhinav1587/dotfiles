@@ -1,0 +1,7 @@
+[user]
+	name = Abhinav
+	email = abhinav1587@gmail.com
+[core]
+	editor = emacs
+[pull]
+	rebase = true
