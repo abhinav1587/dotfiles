@@ -4,3 +4,6 @@
 [submodule "lisp/.lisp/paredit"]
 	path = lisp/.lisp/paredit
 	url = http://mumble.net/~campbell/git/paredit.git
+[submodule "lisp/.lisp/org-bullets"]
+	path = lisp/.lisp/org-bullets
+	url = https://github.com/sabof/org-bullets.git
