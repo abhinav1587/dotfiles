@@ -1,0 +1,3 @@
+[submodule "lisp/.lisp/geiser"]
+	path = lisp/.lisp/geiser
+	url = http://git.sv.gnu.org/r/geiser.git
