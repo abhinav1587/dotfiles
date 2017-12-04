@@ -1,0 +1,88 @@
+#+TITLE: Emacs Configuration
+
+* UI
+** Disable the menu bar
+  #+BEGIN_SRC emacs-lisp
+   (menu-bar-mode -1)
+  #+END_SRC
+
+** Set the wombat theme
+  #+BEGIN_SRC emacs-lisp
+   (load-theme 'wombat t)
+  #+END_SRC
+
+** Scroll one line at a time past the top or bottom window
+   #+BEGIN_SRC emacs-lisp
+    (setq scroll-conservatively 10000)
+   #+END_SRC  
+   
+
+* Org mode
+** Bullets
+   #+BEGIN_SRC emacs-lisp
+    (load-file "~/.lisp/org-bullets/org-bullets.el")
+    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+   #+END_SRC
+
+** Elipsis
+   #+BEGIN_SRC emacs-lisp
+    (setq org-ellipsis "⤵")
+   #+END_SRC
+
+** Use syntax highlighting in source blocks while editing
+   #+BEGIN_SRC emacs-lisp
+    (setq org-src-fontify-natively t)   
+   #+END_SRC
+
+** Configure indentations
+   #+BEGIN_SRC emacs-lisp
+     (add-hook 'org-mode-hook           #'org-indent-mode)
+     (add-hook 'org-mode-hook           #'visual-line-mode)
+   #+END_SRC
+
+
+* Org Babel
+** Load Scheme and Emacs Lisp
+   #+BEGIN_SRC emacs-lisp
+     (org-babel-do-load-languages
+      'org-babel-load-languages
+      '((scheme . t)
+        (emacs-lisp . nil)
+        ))
+   #+END_SRC
+
+** Don't ask before evaluating code blocks
+   #+BEGIN_SRC emacs-lisp
+    (setq org-confirm-babel-evaluate nil)
+   #+END_SRC
+
+** When editing a code snippet, use the current window rather than popping open a new one.
+   #+BEGIN_SRC emacs-lisp
+    (setq org-src-window-setup 'current-window)
+   #+END_SRC
+
+
+* Scheme
+** Configure Geiser for Guile
+   #+BEGIN_SRC emacs-lisp
+    (load-file "~/.lisp/geiser/elisp/geiser.el")
+    (setq geiser-active-implementations '(guile))
+   #+END_SRC
+   
+** Par Edit configurations
+   #+BEGIN_SRC emacs-lisp
+     (load-file "~/.lisp/paredit/paredit.el")
+     (autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
+     (add-hook 'emacs-lisp-mode-hook       #'enable-paredit-mode)
+     (add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
+     (add-hook 'ielm-mode-hook             #'enable-paredit-mode)
+     (add-hook 'lisp-mode-hook             #'enable-paredit-mode)
+     (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
+     (add-hook 'scheme-mode-hook           #'enable-paredit-mode)
+   #+END_SRC
+
+** Enable Company Mode for Scheme
+   #+BEGIN_SRC emacs-lisp
+     (add-hook 'scheme-mode-hook           #'company-mode)
+   #+END_SRC
+
