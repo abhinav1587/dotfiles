@@ -42,12 +42,13 @@
 
 
 * Org Babel
-** Load Scheme and Emacs Lisp
+** Load Languages
    #+BEGIN_SRC emacs-lisp
      (org-babel-do-load-languages
       'org-babel-load-languages
       '((scheme . t)
         (emacs-lisp . nil)
+        (org . t)
         ))
    #+END_SRC
 
