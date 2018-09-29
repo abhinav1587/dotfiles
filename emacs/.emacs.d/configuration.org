@@ -47,7 +47,7 @@
      (org-babel-do-load-languages
       'org-babel-load-languages
       '((scheme . t)
-        (emacs-lisp . nil)
+        (emacs-lisp . t)
         (org . t)
         ))
    #+END_SRC
