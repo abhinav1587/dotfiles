@@ -1,2 +1,24 @@
-# dotfiles
-My personal dot file configurations organized in this repository.
+* dotfiles
+Tailored for Scheme programming in Emacs on a 12" MacBook.
+
+Requies GNU Stow to faciliate installation. See [[https://github.com/hrs/dotfiles#Installation][hrs/dotfiles]]
+
+** The Scheme development environment
+Programming in Scheme was the main driving force behind this setup, as well as the choice of a computing device.
+
+*** MacBook
+
+*** Emacs
+**** Guile
+**** Geiser
+**** ParEdit
+
+** Keymapping with Karabiner
+
+The MacBook does not have the right control key, although one of the command or option keys could be turned into control, [[https://github.com/tekezo/Karabiner-Elements][Karabiner]] makes it even better by setting the control keys closer to the pinky finger. With Paredit, there is heavy use of [[https://www.emacswiki.org/emacs/KeyChord][key chords]]
+
+The control keys were mapped to the caps lock and return keys, turning them into dual mode keys. With dual mode, the repurposed key has a different behaviour from being pressed and pressed and quickly released, as if hitting a character key for typing.
+ - The return key, when pressed works as a control key, and when hit, works as a return key. 
+ - The caps lock key, works in a similar way, but when pressed, works as meta/escape key.
+
+dotfiles was inspired by https://github.com/hrs/dotfiles
