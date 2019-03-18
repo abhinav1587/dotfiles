@@ -1,12 +1,18 @@
 * dotfiles
 Tailored for Scheme programming in Emacs on a 12" MacBook.
 
-Requies GNU Stow to faciliate installation. See [[https://github.com/hrs/dotfiles#Installation][hrs/dotfiles]]
+Requies GNU Stow to facilitate installation. See [[https://github.com/hrs/dotfiles#Installation][hrs/dotfiles]]
 
 ** The Scheme development environment
 Programming in Scheme was the main driving force behind this setup, as well as the choice of a computing device.
 
 *** MacBook
+Why the [[https://en.wikipedia.org/wiki/MacBook_(2015%E2%80%93present)][12" MacBook]]? Is it not the least powerful of all MacBooks?
+Actually, since my plan was to program inside the terminal and that I wouldn't be running any CPU intensive computation, the hardware spec was the least of my concern.
+1. It has to have the best UX and having Unix as the OS. The only thing that comes to mind with this requirement is a macOS.
+2. It has to be ultra portable (small and light), should not generate any unnecessary heat (similar to mobile phone / tablet) and should not make any noise (fanless), like a mobile phone. High resolution display is a nice to have. Very few portable computing devices satisfy these requirements. The macOS requirement itself narrows down the search to Mac only devices. Ultra portable means MacBooks only. The MacBook Air came close, but at the time I was in the market, a new type of device was just released and it was the 12" MacBook. It filled all the requirements nicely. To me, that's my perfect computing device.
+
+As Steve Jobs, at the very beginning of Apple intended the computing device to be, the 12" MacBook is, I think, the most representative of his dream, and it shows; a zen like device, with no distractions at all, which allows you to focus on your most important task, and for me, that's the terminal running in full screen in high resolution, making the fonts look super smooth. With Emacs, Guile, Geiser and ParEdit, along with the key remap working in unison, I feel that it's a step closer to brain machine interface.
 
 *** Emacs
 **** Guile
