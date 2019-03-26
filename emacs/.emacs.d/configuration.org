@@ -107,3 +107,10 @@
      (add-hook 'scheme-mode-hook           #'company-mode)
    #+END_SRC
 
+
+* Lisp
+** QuickLisp load
+#+BEGIN_SRC emacs-lisp
+  (load (expand-file-name "~/.quicklisp/slime-helper.el"))
+  (setq inferior-lisp-program "sbcl")
+#+END_SRC
