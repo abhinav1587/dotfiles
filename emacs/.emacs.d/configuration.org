@@ -14,17 +14,29 @@
    (menu-bar-mode -1)
   #+END_SRC
 
-** Set the wombat theme
-  #+BEGIN_SRC emacs-lisp
-   (load-theme 'wombat t)
-  #+END_SRC
+
+** Theme Changer
+*** Set Location
+#+BEGIN_SRC emacs-lisp
+  (setq calendar-location-name "Toronto, ON")
+  (setq calendar-latitude 43.65)
+  (setq calendar-longitude -79.38)
+#+END_SRC
+*** Specify the day and night themes:
+#+BEGIN_SRC emacs-lisp
+(require 'theme-changer)
+(change-theme 'whiteboard 'wombat)
+#+END_SRC
 
 ** Scroll one line at a time past the top or bottom window
    #+BEGIN_SRC emacs-lisp
     (setq scroll-conservatively 10000)
    #+END_SRC  
    
-
+** Display Clock
+#+BEGIN_SRC emacs-lisp
+  (display-time-mode 1)
+#+END_SRC
 * Org mode
 ** Bullets
    #+BEGIN_SRC emacs-lisp
