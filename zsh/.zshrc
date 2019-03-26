@@ -61,6 +61,9 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     macports
+    docker
+    docker-machine
+    docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
