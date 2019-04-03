@@ -1,6 +1,13 @@
 * dotfiles
 Tailored for Scheme programming in Emacs on a 12" MacBook.
 
+** Installation
+1. git clone this ~/.dotfiles
+2. cd .dotfiles
+3. stow emacs
+
+~/.emacs.d will have its configuration files symlinked to .dotfiles
+
 Requies GNU Stow to facilitate installation. See [[https://github.com/hrs/dotfiles#Installation][hrs/dotfiles]]
 
 ** The Scheme development environment
