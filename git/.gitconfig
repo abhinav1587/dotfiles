@@ -5,3 +5,5 @@
 	editor = emacs
 [pull]
 	rebase = true
+[github]
+	user = s-abhinav
