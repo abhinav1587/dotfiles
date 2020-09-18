@@ -68,27 +68,6 @@
                         ]
                     },
                     {
-                        "description": "Map left_ctrl to caps_lock.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_control",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "caps_lock"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Block left-handed command + left-handed key",
                         "manipulators": [
                             {
